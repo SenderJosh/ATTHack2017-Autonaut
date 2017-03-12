@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackathon.att.autonaut.RouteView"
+    android:background="@drawable/fullrouteviewbackgroundmin">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Name to Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+<!--
+    <ImageView
+        android:id="@+id/imageInfoRoutePinkHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:contentDescription="Header"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pinkgradientheader"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+-->
+
+    <!-- Squares Here -->
+
+<!--    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="67dp"
+        app:srcCompat="@drawable/orangesquare"
+        android:layout_marginStart="23dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/pinksquare"
+        android:layout_marginEnd="21dp"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/bluesquare"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/lightgreensquare"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView7" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/greenrectangle"
+        android:layout_alignParentEnd="true" />
+-->
+    <!-- Icons Here -->
+
+<!--    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/oilicon"
+        android:layout_marginStart="14dp"
+        android:layout_above="@+id/gasNumber"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/clockicon"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginEnd="13dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/dollaricon"
+        android:layout_alignTop="@+id/imageView9"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/multiplyicon"
+        android:layout_alignTop="@+id/imageView11"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/mapicon"
+        android:layout_marginBottom="7dp"
+        android:layout_alignBottom="@+id/imageView12"
+        android:layout_alignStart="@+id/timesNumber" />
+        -->
+
+    <!-- Text Here -->
+
+    <TextView
+        android:id="@+id/gasNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="99.99"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginTop="143dp"
+        android:layout_marginLeft="75dp"/>
+
+    <TextView
+        android:id="@+id/timeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="99.99"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="143dp" />
+
+    <TextView
+        android:id="@+id/moneyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="99.99"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginBottom="74dp" />
+
+    <TextView
+        android:id="@+id/timesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="255dp"
+        android:layout_marginTop="315dp"
+        android:fontFamily="sans-serif"
+        android:text="100"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/milesNumberTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="999 mi"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="500dp"
+        android:layout_alignStart="@+id/moneyNumberTotal" />
+
+    <TextView
+        android:id="@+id/moneyNumberTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="$999.99"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:layout_marginEnd="33dp"
+        android:layout_marginTop="455dp"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

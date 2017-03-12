@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgimage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/routesbackground"
+    android:visibility="visible"
+    tools:context="hackathon.att.autonaut.ScrollRoutesActivity">
+
+    <ImageView
+        android:id="@+id/imageScrollRoutesPinkHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="406dp"
+        android:contentDescription="Header"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pinkgradientheader" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Text"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="All Routes"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="72dp" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="220dp"
+        android:id="@+id/routesList"></ListView>
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/plusicon"
+        android:layout_alignBottom="@+id/imageScrollRoutesPinkHeader"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/timeSort"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/recenticon"
+        android:layout_alignBottom="@+id/imageScrollRoutesPinkHeader"
+        android:layout_toEndOf="@+id/alphSort"
+        android:layout_marginStart="14dp" />
+
+    <ImageButton
+        android:id="@+id/alphSort"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/alphabeticalicon"
+        android:layout_alignTop="@+id/timeSort"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:id="@+id/SORT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SORT"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/alphSort"
+        android:layout_toStartOf="@+id/alphSort" />
+
+    <Button
+        android:id="@+id/buttonDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="Dashboard"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

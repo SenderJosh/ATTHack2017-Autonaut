@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hackathon.att.autonaut.Main"
+    android:background="@drawable/loginbackgroundnew">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/loginsquare"
+        android:id="@+id/trackingBlueSquares"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:id="@+id/textView3"
+        android:fontFamily="sans-serif"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="autonaut"
+        android:textColor="@android:color/white"
+        android:textSize="62sp" />
+
+    <ImageView
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/imageView2"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:fontFamily="sans-serif"
+        android:text="diagnose, track, reduce your carbon footprint"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/email"
+        android:hint="email@email.com"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:layout_width="300dp"
+        android:background="@drawable/border"
+        android:layout_alignBottom="@+id/password"
+        android:layout_alignStart="@+id/password"
+        android:layout_marginBottom="38dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="password"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/border"
+        android:layout_marginBottom="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Login"
+        android:id="@+id/FinalLogin"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:layout_below="@+id/email"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:text="Login"
+        android:id="@+id/Login"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:layout_above="@+id/FinalLogin"
+        android:layout_toStartOf="@+id/FinalLogin"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
